@@ -1,14 +1,125 @@
 <!doctype html>
 <html lang="zh">
 <head>
-  <meta charset="utf-8" />
-  <title>Hi, I'm Yixiao</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>body{max-width:780px;margin:40px auto;font-family:system-ui, -apple-system, Segoe UI, Roboto}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ren Yixiao — Personal Website</title>
+  <meta name="description" content="Ren Yixiao — Academic homepage">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>我忘记了所有悲剧</h1>
-  <p>目之所及都是奇迹</p>
-  <p><a href="https://github.com/你的用户名">GitHub</a> · <a href="mailto:you@example.com">Email</a></p>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <a href="#" class="site-title">Ren Yixiao</a>
+        <div class="site-subtitle">Undergraduate · NLP & Multimodal Research</div>
+      </div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <img src="assets/img/avatar.jpg" alt="Portrait" class="avatar" />
+        <div>
+          <h1>你好，我是任亦霄</h1>
+          <p>
+            我目前专注于 <strong>NLP</strong> 与 <strong>多模态</strong> 研究，方向涵盖人类价值对齐、视频流式推理与人类中心决策。
+            本站托管于 <span class="mono">GitHub&nbsp;Pages</span>，内容将持续更新。
+          </p>
+          <p class="lang-note">EN version below ⬇</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m an undergraduate student interested in <em>human‑centered decision‑making</em> and
+          <em>vision‑language reasoning</em>. I’ve co‑authored EMNLP papers on value‑grounded decision‑making and embodied reasoning benchmarks.
+          Here you’ll find my selected publications and projects.
+        </p>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <h2>Publications (selected)</h2>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">VIVA: A Benchmark for Vision‑Grounded Decision‑Making with Human Values</span>.
+            <span class="pub-venue">EMNLP 2024</span>.
+            <span class="pub-authors"><strong>Ren Y.</strong>, et al.</span>
+            <span class="pub-links">
+              <a href="#" aria-label="paper link">paper</a> ·
+              <a href="#" aria-label="code link">code</a>
+            </span>
+          </li>
+          <li>
+            <span class="pub-title">HRDBench: Embodied Reasoning on Human‑Centered Tasks</span>.
+            <span class="pub-venue">EMNLP 2025 Findings</span>.
+            <span class="pub-authors"><strong>Ren Y.</strong>, et al.</span>
+            <span class="pub-links">
+              <a href="#" aria-label="paper link">paper</a> ·
+              <a href="#" aria-label="code link">code</a>
+            </span>
+          </li>
+        </ol>
+        <p class="note">(* Replace links and add more entries as needed.)</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Streaming‑Video QA Benchmark</h3>
+            <p>Designing temporally grounded questions to evaluate streaming video reasoning and human‑centered decisions.</p>
+            <p class="small mono">2025 · Research</p>
+          </article>
+          <article class="card">
+            <h3>Value‑Aligned Agents</h3>
+            <p>Building evaluation protocols for value‑grounded decisions in open‑world multimodal settings.</p>
+            <p class="small mono">2024–2025 · Research</p>
+          </article>
+          <article class="card">
+            <h3>Teaching Notes</h3>
+            <p>Step‑by‑step explainers for calculus, probability, and linear algebra targeted at beginners.</p>
+            <p class="small mono">Ongoing · Writing</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/your-username" rel="me">your-username</a></li>
+          <li>Google Scholar: <a href="#" rel="me">Scholar</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> Ren Yixiao</span>
+      <span> · Built with <span class="mono">HTML/CSS</span> · Hosted on <span class="mono">GitHub Pages</span></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
